@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gap Property</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        .box-one{
+            width: 100%;
+            height: 100%;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box-one">One</div>
+        <div class="box-one">Two</div>
+        <div class="box-one">Three</div>
+        <div class="box-one">Four</div>
+        <div class="box-one">Five</div>
+        <div class="box-one">Six</div>
+        <div class="box-one">Seven</div>
+        <div class="box-one">Eight</div>
+    </div>
+</body>
+</html>
