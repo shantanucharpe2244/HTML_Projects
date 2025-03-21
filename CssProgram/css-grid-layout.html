@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+        .one{
+            width: 100%;
+            height: 100%;
+            background-color: aqua;
+            grid-column: 1/ span 5;
+        }
+        .two{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(201, 116, 37);
+            grid-column: 1/ span 2;
+            grid-row: 2/ span 3;
+        }
+        .three{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(92, 38, 218);
+            grid-column: 3/ span 3;
+        }
+        .four{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(142, 34, 175);
+            grid-column: 3/ span 3;
+        }
+        .five{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(21, 168, 53);
+            grid-column: 3/ span 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+        <div class="five"></div>
+    </div>
+</body>
+</html>
